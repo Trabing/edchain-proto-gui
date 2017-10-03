@@ -13,3 +13,8 @@ going down the page, but skipping the second 6.034 course listed becase it has t
 ---
 
 multi-core programming has a couple of unordered list items and it made me realize that I'm not going to be preserving that sense of structure in the mock-up. maybe we should use mongo or postgres to store mark-up to preserve the style?
+
+---
+
+skipping "Great Ideas in Theoretical Computer Science" because of string interpolation issue
+
