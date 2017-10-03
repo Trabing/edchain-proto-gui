@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex, nofollow, noarchive, nocache, noodp, nosnippet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>edChain</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" media="screen">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='ico/favicon.ico') }}">
+    </head>
+    <body>
+        <div id="ground">
+            <ferryman id="figure">
+                <form action="/check-login" method="post" role="form">
+                    <input id="username" type="text" placeholder="Username" name="username" value="{{ request.form.username }}" required autofocus><br>
+                    <input id="password" type="password" placeholder="Password" name="password" value="{{ request.form.password }}" required><br>
+                    <input id="factor" type="text" placeholder="Second Factor" name="factor" value="{{ request.form.factor }}"><br>
+                    <button id="submit" type="submit">Return</button>
+                </form><br>
+                {% if error_message %}
+                    <invalid>{{ error_message }}</invalid>
+                {% endif %}
+            </ferryman>
+        </div>
+        <script src="//code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/behavior.js') }}" type="text/javascript"></script>
+    </body>
+</html>

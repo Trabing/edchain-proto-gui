@@ -1,0 +1,68 @@
+html, body {
+        margin: 0;
+}
+
+#ground {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../jpg/doug-linstedt-135670.jpg");
+        background-color: #fff;
+}
+
+#ground > ferryman {
+        margin: auto;
+        width: 20vw;
+        height: 40vh;
+        text-align: center;
+        background-color: rgba(211, 211, 211, .69)
+}
+
+form {
+        text-align: center;
+}
+
+input {
+        margin-bottom: 2.5vh;
+        border: none;
+        border-radius: 0;
+        padding: .498132vh .26058632vw;
+        width: 75%;
+}
+
+input:first-child {
+        margin-top: 9.96264vh;
+}
+
+*:focus {
+        outline: none;
+}
+
+button {
+        margin: auto;
+        border: none;
+        border-radius: 2px;
+        padding: .996264vh 1.04234528vw;
+        background: #333;
+        text-transform: uppercase;
+        letter-spacing: .09em;
+        color: #ccc;
+}
+
+button:hover {
+        color: #fff;
+}
+
+invalid {
+        color: red;
+}
+
+@media all and (max-width: 640px) {
+        #main {
+                flex-direction: column;
+                order: 0;
+        }
+}
